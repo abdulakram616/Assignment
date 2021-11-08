@@ -11,6 +11,7 @@ pipeline {
 				bat """
                     helloworld.py
 				"""
-				
+	    }
+	}		
     }
 }
