@@ -1,13 +1,11 @@
 pipeline {
-	agent { 
-		dockerfile true
-	}
+	agent any
     stages {
         stage('build') {
             steps {
                 echo 'Build job Started'
 				
-				bat """
+				sh """
                     helloworld.py
 				"""
 	    }
