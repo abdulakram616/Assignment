@@ -4,8 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Build job Started'
+				sh 'chmod u+x python helloworld.py'
 				
-				sh 'python helloworld.py'
 	    }
 	}		
     }
