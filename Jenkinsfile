@@ -5,9 +5,7 @@ pipeline {
             steps {
                 echo 'Build job Started'
 				
-				sh """
-                    helloworld.py
-				"""
+				sh 'python helloworld.py'
 	    }
 	}		
     }
