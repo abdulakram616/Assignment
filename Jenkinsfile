@@ -1,10 +1,12 @@
 pipeline {
-    agent { docker { image '4246fb19839f' } }
-    stages {
-        stage('build') {
-            steps {
-                sh 'python --version'
-            }
-        }
-    }
+agent any
+stages {
+stage('build') {
+steps {
+echo 'Build job Started'
+
+sh 'helloworld.py'
+}
+}
+}
 }
