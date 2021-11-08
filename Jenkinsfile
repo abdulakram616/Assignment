@@ -1,13 +1,10 @@
 pipeline {
-	agent { label 'linux' }
+    agent { docker { image 'python:3.5.1' } }
     stages {
         stage('build') {
             steps {
-                echo 'Build job Started'
-				sh 'python helloworld.py'
-				
-	    }
-	}		
+                sh 'python --version'
+            }
+        }
     }
 }
-
