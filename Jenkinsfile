@@ -1,12 +1,10 @@
 pipeline {
-agent any
-stages {
-stage('build') {
-steps {
-echo 'Build job Started'
-
-sh 'helloworld.py'
-}
-}
-}
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                sh 'python --version'
+            }
+        }
+    }
 }
