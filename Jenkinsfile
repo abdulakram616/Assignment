@@ -5,9 +5,9 @@ pipeline {
             steps {
                 echo 'Build job Started'
 				
-				bat 'start cmd.exe
+				bat """
                     helloworld.py
-				'
+				"""
 	    }
 	}		
     }
