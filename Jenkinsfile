@@ -4,7 +4,7 @@ pipeline {
             stage('Build') {
                 agent {
                     docker{
-                        image 'hello3'
+                        image 'hello3:latest'
                     }
                 }
                 steps{
