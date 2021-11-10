@@ -2,14 +2,10 @@ pipeline {
     agent any
         stages {
             stage('Build') {
-                agent {
-                    docker{
-                        image 'python'
-                    }
-                }
                 steps{
                     script{
                         echo 'Hello World'
+                        sh 'pip install -r requirments.txt'
                         sh """chmod +x -R ${env.WORKSPACE}"""
                         sh 'python ./helloworld.py'
                         //def path ='[]'
