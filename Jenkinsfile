@@ -5,7 +5,6 @@ pipeline {
                 agent {
                     dockerfile {
                         filename ' ./Dockerfile'
-                        args "-u root -v D:\jenkins:/var/jenkins_home"
                     }
                 }
                 steps{
