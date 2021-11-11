@@ -5,7 +5,6 @@ pipeline {
                 steps{
                     script{
                         echo 'Hello World'
-                        sh 'pip install -r requirments.txt'
                         sh """chmod +x -R ${env.WORKSPACE}"""
                         sh 'python ./helloworld.py'
                         //def path ='[]'
