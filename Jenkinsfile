@@ -2,6 +2,12 @@ pipeline {
     agent any
         stages {
             stage('Build') {
+                agent {
+                    dockerfile {
+                        filename ' ./Dockerfile'
+                        args "-u root -v D:\jenkins:/var/jenkins_home"
+                    }
+                }
                 steps{
                     script{
                         echo 'Hello World'
