@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'python' } }
+    agent { docker { image '3.10.0-alpine3.14' } }
       stages {
         stage('log version info') {
       steps {
