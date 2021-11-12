@@ -8,7 +8,7 @@ pipeline {
 //         }
         stage('Build') { 
             agent {
-                dockerfile: {
+                dockerfile {
                     filename 'Dockerfile' 
                 }
             }
