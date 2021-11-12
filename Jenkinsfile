@@ -8,8 +8,8 @@ pipeline {
 //         }
         stage('Build') { 
             agent {
-                withDockerContainer: {
-                    image 'python:latest' 
+                dockerfile: {
+                    filename 'Dockerfile' 
                 }
             }
             steps{
