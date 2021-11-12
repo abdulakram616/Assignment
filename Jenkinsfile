@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image '3.11.0a2-bullseye' } }
+    agent { docker { image '4246fb19839f' } }
       stages {
         stage('log version info') {
       steps {
