@@ -4,7 +4,7 @@ pipeline {
             stage('Build') {
                 agent {
                 docker {
-                image '4246fb19839f'
+                image '06998f605417'
                     }
                 }
                     steps{
