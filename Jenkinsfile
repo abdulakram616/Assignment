@@ -4,7 +4,7 @@ pipeline {
             stage('Build') {
                 agent {
                 docker {
-                filename ' ./Dockerfile'
+                image '4246fb19839f'
                     }
                 }
                     steps{
