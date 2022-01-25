@@ -1,10 +1,13 @@
-def isPalindrome(s):
-	return s == s[::-1]
+my_string = 'Hello'
+print(my_string)
 
-s = "madam"
-ans = isPalindrome(s)
+my_string = "Hello"
+print(my_string)
 
-if ans:
-	print("Yes")
-else:
-	print("No")
+my_string = '''Hello'''
+print(my_string)
+
+# triple quotes string can extend multiple lines
+my_string = """Hello, welcome to
+           the world of Python"""
+print(my_string)
