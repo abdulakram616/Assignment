@@ -5,7 +5,6 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.powerShell
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.python
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildTypeCustomChart
-import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.githubConnection
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.finishBuildTrigger
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
@@ -62,12 +61,6 @@ project {
             series = listOf(
                 Serie(title = "BuildTestStatus", key = SeriesKey("BuildTestStatus"))
             )
-        }
-        githubConnection {
-            id = "PROJECT_EXT_8"
-            displayName = "GitHub.com"
-            clientId = "b53265e31eb718398a59"
-            clientSecret = "credentialsJSON:d87bf190-94cc-4941-abc0-0d400b048a46"
         }
     }
 }
